@@ -1,0 +1,27 @@
+namespace EstacionamentoFinal.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class CriarBanco : DbMigration
+    {
+        public override void Up()
+        {
+            CreateTable(
+                "dbo.Funcionarios",
+                c => new
+                    {
+                        IdFuncionario = c.Int(nullable: false, identity: true),
+                        Nome = c.String(),
+                        CPF = c.String(),
+                    })
+                .PrimaryKey(t => t.IdFuncionario);
+            
+        }
+        
+        public override void Down()
+        {
+            DropTable("dbo.Funcionarios");
+        }
+    }
+}

@@ -1,0 +1,46 @@
+﻿
+@{
+    List<EstacionamentoFinal.Models.Vaga> vagas = ViewBag.Vagas;
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Gerenciamento das Vagas</h1>
+@Html.ActionLink("Cadastrar Vaga", "Cadastrar", "Vaga")
+<br />
+
+<table class="table table-striped table-bordered table-responsive-lg">
+    <tr>
+        <th>Numeração</th>
+        <th>Identificação</th>
+        <th>Ações</th>
+        <th>Status</th>
+        <th>Histórico</th>
+    </tr>
+    @foreach (EstacionamentoFinal.Models.Vaga vaga in vagas)
+    {
+        <tr>
+            <td>@vaga.IdVaga</td>
+            <td>@vaga.Setor.Nome</td>
+            <td>@Html.ActionLink("Remover", "Remover", "Vaga",
+               new { @id = vaga.IdVaga},
+               new { @class = "btn btn-danger btn-sm"})
+                
+                @Html.ActionLink("Alterar", "Alterar", "Vaga",
+                new { @id = vaga.IdVaga},
+                new { @class = "btn btn-warning btn-sm"})
+            @if (vaga.Ocupado == true)
+            {
+                <td bgcolor="#ff0000">Ocupado</td>
+            }
+            else
+            {
+                <td bgcolor="#4dff4d">Livre</td>
+            }
+            </td>
+            <td>@Html.ActionLink("Visualizar", "Visualizar", "Vaga",
+               new { @id = vaga.IdVaga },
+               new { @class = "btn btn-primary btn-sm" })</td>
+        </tr>
+    }
+</table>
+

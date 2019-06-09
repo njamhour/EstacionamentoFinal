@@ -1,0 +1,42 @@
+﻿
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<EstacionamentoFinal.Models.Movimentacao> movimentacoes = ViewBag.Movimentacoes;
+}
+
+<h2>Gerenciamento Veiculo</h2>
+@Html.ActionLink("Cadastrar Movimentação", "Cadastrar", "Movimentacao")
+<br />
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Placa</th>
+        <th>Vaga</th>
+        <th>Data/Hora Entrada</th>
+        <th>Ações</th>
+    </tr>
+    @foreach (EstacionamentoFinal.Models.Movimentacao movimentacao in movimentacoes)
+    {
+        <tr>
+            <td>@movimentacao.Veiculo.Placa</td>
+            <td>@movimentacao.Vaga.Setor</td>
+            <td>@movimentacao.Entrada</td>
+            <td>
+                @Html.ActionLink("Remover", "Remover", "Cliente",
+               new { id = movimentacao.IdMovimentacao },
+               new { @class = "btn-sm btn-danger" })
+
+                @Html.ActionLink("Alterar", "Alterar", "Cliente",
+               new { id = movimentacao.IdMovimentacao },
+                new { @class = "btn-sm btn-warning" })
+
+                @Html.ActionLink("Saida", "Saida", "Movimentacao",
+               new { id = movimentacao.IdMovimentacao },
+               new { @class = "btn-sm brn-primary" })
+            </td>
+        </tr>
+    }
+</table>
+
+
