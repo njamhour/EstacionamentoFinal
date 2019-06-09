@@ -36,5 +36,6 @@ namespace EstacionamentoFinal.DAL
         {
             return ctx.Vagas.Find(identificador);
         }
+
     }
 }

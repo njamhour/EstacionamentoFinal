@@ -237,6 +237,7 @@
     <Compile Include="Models\Vaga.cs" />
     <Compile Include="Models\Veiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\EncurtarSetor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

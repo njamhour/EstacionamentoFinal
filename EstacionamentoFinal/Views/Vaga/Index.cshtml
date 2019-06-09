@@ -1,8 +1,10 @@
-﻿
+﻿@model EstacionamentoFinal.Models.Vaga
+@using EstacionamentoFinal.Util
 @{
     List<EstacionamentoFinal.Models.Vaga> vagas = ViewBag.Vagas;
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    
 }
 <h1>Gerenciamento das Vagas</h1>
 @Html.ActionLink("Cadastrar Vaga", "Cadastrar", "Vaga")
@@ -10,11 +12,12 @@
 
 <table class="table table-striped table-bordered table-responsive-lg">
     <tr>
-        <th>Numeração</th>
-        <th>Identificação</th>
+        <th>ID</th>
+        <th>Setor</th>
         <th>Ações</th>
         <th>Status</th>
         <th>Histórico</th>
+        <th>Teste</th>
     </tr>
     @foreach (EstacionamentoFinal.Models.Vaga vaga in vagas)
     {
@@ -39,7 +42,9 @@
             </td>
             <td>@Html.ActionLink("Visualizar", "Visualizar", "Vaga",
                new { @id = vaga.IdVaga },
-               new { @class = "btn btn-primary btn-sm" })</td>
+               new { @class = "btn btn-primary btn-sm" })
+            </td>
+            <td>@vaga.Setor.Nome.Substring(0,1) - @vaga.IdVaga</td>
         </tr>
     }
 </table>
