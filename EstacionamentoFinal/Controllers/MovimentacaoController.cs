@@ -19,20 +19,25 @@ namespace EstacionamentoFinal.Controllers
         }
         public ActionResult Cadastrar()
         {
+            ViewBag.Veiculo = new SelectList(VeiculoDAO.RetornarVeiculos(), "IdVeiculo", "Placa");
+            ViewBag.Vaga = new SelectList(VagasDAO.RetornarVagas(), "IdVaga", "Identificador");
             return View();
         }
         [HttpPost]
-        public ActionResult Cadastrar(int txtVaga, string txtCPF)
+        public ActionResult Cadastrar(int Veiculo, int Vaga)
         {
+            Veiculo ve = VeiculoDAO.BuscarVeiculoPorId(Veiculo);
+            Vaga va = VagasDAO.BuscarVagaPorId(Vaga);
+            
             Movimentacao mov = new Movimentacao
             {
-                //Vaga = txtVaga,
-                //Veiculo = txtVeiculo;
-                //Entrada = dataEntrada;
-                //Saida = dataSaida;
-
+                Veiculo = ve,
+                Vaga = va,
+                Entrada = DateTime.Now
+                
             };
             MovimentacaoDAO.CadastrarMovimentacao(mov);
+
             return RedirectToAction("Index", "Movimentacao");
         }
         public ActionResult Remover(int? id)

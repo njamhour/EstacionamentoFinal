@@ -99,14 +99,7 @@ C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFi
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.SqlServer.dll
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.xml
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.SqlServer.xml
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.CriarBanco.resources
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.CriarTabelasVagaVeiculo.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.AdicionandoTabelas.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.CorrigirVaga.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.AtualizandoBanco.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.TesteBancoCliente.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.RemoverValidacaoBanco.resources
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\ApplicationInsights.config
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\csc.exe
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -166,14 +159,57 @@ C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\Estacion
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.dll
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.pdb
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.RemoverAnotacaoVagas.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.RemoverAnotacaoVagas.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.InserirCategoriaVeiculo.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.Fix123.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.StatusVaga.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.RemoverCategoriaTeste.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.RemoverCliente.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.RemovendoClientesFinalizandoCVeiculo.resources
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.AlterarVaga.resources
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csprojResolveAssemblyReference.cache
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.Setores.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.Correcoes.resources
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\ApplicationInsights.config
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\csc.exe
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\System.Collections.Immutable.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\System.Reflection.Metadata.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\vbc.exe
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\VBCSCompiler.exe
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\VBCSCompiler.exe.config
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\EstacionamentoFinal.dll.config
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\EstacionamentoFinal.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\EstacionamentoFinal.pdb
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.SqlServer.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.DependencyCollector.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.Web.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.WindowsServer.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.ApplicationInsights.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.Web.Infrastructure.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Helpers.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Mvc.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Razor.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Deployment.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Razor.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.SqlServer.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.DependencyCollector.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.Web.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.WindowsServer.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.ApplicationInsights.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Razor.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Deployment.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Razor.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Helpers.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Mvc.xml
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csprojResolveAssemblyReference.cache
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.dll
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.pdb
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.AlterarVaga.resources
+D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache

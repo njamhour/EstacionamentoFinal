@@ -17,7 +17,7 @@
         <th>Ações</th>
         <th>Status</th>
         <th>Histórico</th>
-        <th>Teste</th>
+        <th>Identificador</th>
     </tr>
     @foreach (EstacionamentoFinal.Models.Vaga vaga in vagas)
     {
@@ -44,7 +44,8 @@
                new { @id = vaga.IdVaga },
                new { @class = "btn btn-primary btn-sm" })
             </td>
-            <td>@vaga.Setor.Nome.Substring(0,1) - @vaga.IdVaga</td>
+            @*<td>@vaga.Setor.Nome.Substring(0,1)-@vaga.IdVaga</td>*@
+            <td>@vaga.Identificador.Substring(0,2)</td>
         </tr>
     }
 </table>

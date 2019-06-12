@@ -1,4 +1,4 @@
-﻿
+﻿@model EstacionamentoFinal.Models.Movimentacao
 @{
     ViewBag.Title = "Cadastrar";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,16 +9,23 @@
     <fieldset>
         <legend>Cadastrar Movimentação</legend>
         <div id="Placa" class="form-group">
-            @Html.Label("Placa", new { @class = "control-label col-sm-2" })
+            @Html.Label("Veiculo", new { @class = "control-label col-sm-2" })
+            
             <div class="col-sm-10">
-                @Html.TextBox("txtPlaca", "", new { @class = "form-control", @placeholder = "Digite a placa do veículo" })
+                @Html.DropDownList("Veiculo", null,
+               "-- SELECIONE --", 
+               new { @class = "form-control" })
+                @*@Html.TextBox("txtPlaca", "", new { @class = "form-control", @placeholder = "Digite a placa do veículo" })*@
             </div>
         </div>
 
         <div id="Vaga" class="form-group">
             @Html.Label("Vaga", new { @class = "control-label col-sm-2" })
             <div class="col-sm-10">
-                @Html.TextBox("txtVaga", "", new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })
+                @*@Html.TextBox("txtVaga", "", new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })*@
+                @Html.DropDownList("Vaga", null,
+               "-- SELECIONE --", 
+               new { @class = "form-control" })
             </div>
         </div>
 

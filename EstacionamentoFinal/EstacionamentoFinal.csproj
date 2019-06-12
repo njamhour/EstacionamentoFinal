@@ -160,73 +160,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905171401059_CriarBanco.cs" />
-    <Compile Include="Migrations\201905171401059_CriarBanco.Designer.cs">
-      <DependentUpon>201905171401059_CriarBanco.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905182329589_CriarTabelasVagaVeiculo.cs" />
-    <Compile Include="Migrations\201905182329589_CriarTabelasVagaVeiculo.Designer.cs">
-      <DependentUpon>201905182329589_CriarTabelasVagaVeiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905190212107_AdicionandoTabelas.cs" />
-    <Compile Include="Migrations\201905190212107_AdicionandoTabelas.Designer.cs">
-      <DependentUpon>201905190212107_AdicionandoTabelas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905190248211_CorrigirVaga.cs" />
-    <Compile Include="Migrations\201905190248211_CorrigirVaga.Designer.cs">
-      <DependentUpon>201905190248211_CorrigirVaga.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905192219082_AtualizandoBanco.cs" />
-    <Compile Include="Migrations\201905192219082_AtualizandoBanco.Designer.cs">
-      <DependentUpon>201905192219082_AtualizandoBanco.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905192322528_TesteBancoCliente.cs" />
-    <Compile Include="Migrations\201905192322528_TesteBancoCliente.Designer.cs">
-      <DependentUpon>201905192322528_TesteBancoCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905201653060_RemoverValidacaoBanco.cs" />
-    <Compile Include="Migrations\201905201653060_RemoverValidacaoBanco.Designer.cs">
-      <DependentUpon>201905201653060_RemoverValidacaoBanco.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905201958047_RemoverAnotacaoVagas.cs" />
-    <Compile Include="Migrations\201905201958047_RemoverAnotacaoVagas.Designer.cs">
-      <DependentUpon>201905201958047_RemoverAnotacaoVagas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905202237316_InserirCategoriaVeiculo.cs" />
-    <Compile Include="Migrations\201905202237316_InserirCategoriaVeiculo.Designer.cs">
-      <DependentUpon>201905202237316_InserirCategoriaVeiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905202239165_Fix123.cs" />
-    <Compile Include="Migrations\201905202239165_Fix123.Designer.cs">
-      <DependentUpon>201905202239165_Fix123.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905202311267_StatusVaga.cs" />
-    <Compile Include="Migrations\201905202311267_StatusVaga.Designer.cs">
-      <DependentUpon>201905202311267_StatusVaga.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905202332227_RemoverCategoriaTeste.cs" />
-    <Compile Include="Migrations\201905202332227_RemoverCategoriaTeste.Designer.cs">
-      <DependentUpon>201905202332227_RemoverCategoriaTeste.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905210051306_RemoverCliente.cs" />
-    <Compile Include="Migrations\201905210051306_RemoverCliente.Designer.cs">
-      <DependentUpon>201905210051306_RemoverCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905232344547_RemovendoClientesFinalizandoCVeiculo.cs" />
-    <Compile Include="Migrations\201905232344547_RemovendoClientesFinalizandoCVeiculo.Designer.cs">
-      <DependentUpon>201905232344547_RemovendoClientesFinalizandoCVeiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905240108194_AlterarVaga.cs" />
-    <Compile Include="Migrations\201905240108194_AlterarVaga.Designer.cs">
-      <DependentUpon>201905240108194_AlterarVaga.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906042204072_Setores.cs" />
-    <Compile Include="Migrations\201906042204072_Setores.Designer.cs">
-      <DependentUpon>201906042204072_Setores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906042341465_Correcoes.cs" />
-    <Compile Include="Migrations\201906042341465_Correcoes.Designer.cs">
-      <DependentUpon>201906042341465_Correcoes.cs</DependentUpon>
+    <Compile Include="Migrations\201906091801589_AlterarVaga.cs" />
+    <Compile Include="Migrations\201906091801589_AlterarVaga.Designer.cs">
+      <DependentUpon>201906091801589_AlterarVaga.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoriaVeiculo.cs" />
@@ -278,56 +214,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905171401059_CriarBanco.resx">
-      <DependentUpon>201905171401059_CriarBanco.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905182329589_CriarTabelasVagaVeiculo.resx">
-      <DependentUpon>201905182329589_CriarTabelasVagaVeiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905190212107_AdicionandoTabelas.resx">
-      <DependentUpon>201905190212107_AdicionandoTabelas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905190248211_CorrigirVaga.resx">
-      <DependentUpon>201905190248211_CorrigirVaga.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905192219082_AtualizandoBanco.resx">
-      <DependentUpon>201905192219082_AtualizandoBanco.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905192322528_TesteBancoCliente.resx">
-      <DependentUpon>201905192322528_TesteBancoCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905201653060_RemoverValidacaoBanco.resx">
-      <DependentUpon>201905201653060_RemoverValidacaoBanco.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905201958047_RemoverAnotacaoVagas.resx">
-      <DependentUpon>201905201958047_RemoverAnotacaoVagas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905202237316_InserirCategoriaVeiculo.resx">
-      <DependentUpon>201905202237316_InserirCategoriaVeiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905202239165_Fix123.resx">
-      <DependentUpon>201905202239165_Fix123.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905202311267_StatusVaga.resx">
-      <DependentUpon>201905202311267_StatusVaga.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905202332227_RemoverCategoriaTeste.resx">
-      <DependentUpon>201905202332227_RemoverCategoriaTeste.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905210051306_RemoverCliente.resx">
-      <DependentUpon>201905210051306_RemoverCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905232344547_RemovendoClientesFinalizandoCVeiculo.resx">
-      <DependentUpon>201905232344547_RemovendoClientesFinalizandoCVeiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905240108194_AlterarVaga.resx">
-      <DependentUpon>201905240108194_AlterarVaga.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906042204072_Setores.resx">
-      <DependentUpon>201906042204072_Setores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906042341465_Correcoes.resx">
-      <DependentUpon>201906042341465_Correcoes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906091801589_AlterarVaga.resx">
+      <DependentUpon>201906091801589_AlterarVaga.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -346,7 +234,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>2050</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2050/</IISUrl>
+          <IISUrl>http://localhost:9999/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:9999/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

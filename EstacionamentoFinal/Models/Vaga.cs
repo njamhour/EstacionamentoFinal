@@ -13,6 +13,7 @@ namespace EstacionamentoFinal.Models
         [Key]
         public int IdVaga { get; set; }
         public Setor Setor { get; set; }
+        public string Identificador { get; set; }
         public bool Ocupado { get; set; }
 
     }

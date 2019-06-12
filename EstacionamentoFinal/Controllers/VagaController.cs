@@ -22,7 +22,7 @@ namespace EstacionamentoFinal.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Cadastrar(int? Setor, int txtQuantidade)
+        public ActionResult Cadastrar(int Setor, int txtQuantidade)
         {
             Setor s = SetorDAO.BuscarSetorPorId(Setor);
             List<Vaga> vagas = new List<Vaga>();
@@ -31,7 +31,8 @@ namespace EstacionamentoFinal.Controllers
                 Vaga vaga = new Vaga
                 {
                     Setor = s,
-                    Ocupado = false
+                    Ocupado = false,
+                    Identificador = String.Concat(i,s.Nome)
                 };
                 vagas.Add(vaga);
             }

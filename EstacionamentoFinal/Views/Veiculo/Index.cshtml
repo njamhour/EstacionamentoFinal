@@ -23,11 +23,11 @@
             <td>@veiculo.Modelo</td>
             <td>@veiculo.CategoriaVeiculo.Tamanho</td>
             <td>
-                @Html.ActionLink("Remover", "Remover", "Cliente",
+                @Html.ActionLink("Remover", "Remover", "Veiculo",
                new { id = veiculo.IdVeiculo },
                new { @class = "btn-sm btn-danger" })
 
-                @Html.ActionLink("Alterar", "Alterar", "Cliente",
+                @Html.ActionLink("Alterar", "Alterar", "Veiculo",
                new { id = veiculo.IdVeiculo },
                 new { @class = "btn-sm btn-warning" })
             </td>
