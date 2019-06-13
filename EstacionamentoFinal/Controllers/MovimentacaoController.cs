@@ -54,9 +54,17 @@ namespace EstacionamentoFinal.Controllers
         }
 
         [HttpPost]
-        public ActionResult Alterar(string txtNome, string txtCPF, int txtId)
+        public ActionResult Alterar(string txtVeiculo, string txtVaga, string txtEntrada, string txtSaida, int hdnId)
         {
-            Movimentacao mov = MovimentacaoDAO.BuscarMovimentacaoPorId(txtId);
+            DateTime dataEntrada = DateTime.ParseExact(txtEntrada, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+            DateTime dataSaida = DateTime.ParseExact(txtSaida, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+
+            Movimentacao mov = MovimentacaoDAO.BuscarMovimentacaoPorId(hdnId);
+
+            mov.Veiculo.Placa = txtVeiculo;
+            mov.Vaga.Identificador = txtVaga;
+            mov.Entrada = dataEntrada;
+            mov.Saida = dataSaida;
 
             //f.Nome = txtNome;
             //f.CPF = txtCPF;

@@ -160,7 +160,6 @@ C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\Estacion
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.pdb
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.RemoverAnotacaoVagas.resources
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.AlterarVaga.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csprojResolveAssemblyReference.cache
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\ApplicationInsights.config
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\csc.exe
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll

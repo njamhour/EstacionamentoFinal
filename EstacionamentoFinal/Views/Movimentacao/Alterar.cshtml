@@ -1,7 +1,73 @@
-﻿
+﻿@*@model EstacionamentoFinal.Models.Movimentacao*@
+@using EstacionamentoFinal.Models
 @{
-    ViewBag.Title = "Alterar";
+    ViewBag.Title = "Cadastrar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Movimentacao mov = ViewBag.Movimentacao;
 }
 
-<h2>Alterar</h2>
+@using (Html.BeginForm("Alterar", "Movimentacao", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.Hidden("hdnId", mov.IdMovimentacao)
+    <fieldset>
+        <legend>Alterar Setor</legend>
+        <div id="hdnId" class="form-group">
+            @Html.Label("Id", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("txtId", mov.IdMovimentacao, new
+           {
+               @class = "form-control",
+               @placeholder = "",
+               @readonly = ""
+           })
+            </div>
+        </div>
+        <div id="Veiculo" class="form-group">
+            @Html.Label("Veiculo", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("txtVeiculo", mov.Veiculo.Placa, new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })
+                @*@Html.DropDownList("Vaga", null,
+                "-- SELECIONE --",
+                new { @class = "form-control" })*@
+            </div>
+        </div>
+
+        <div id="Vaga" class="form-group">
+            @Html.Label("Vaga", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("txtVaga", mov.Vaga.Identificador, new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })
+                @*@Html.DropDownList("Vaga", null,
+                "-- SELECIONE --",
+                new { @class = "form-control" })*@
+            </div>
+        </div>
+
+        <div id="Entrada" class="form-group">
+            @Html.Label("Entrada", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("txtEntrada", mov.Entrada, new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })
+                @*@Html.DropDownList("Vaga", null,
+                "-- SELECIONE --",
+                new { @class = "form-control" })*@
+            </div>
+        </div>
+
+        <div id="Saida" class="form-group">
+            @Html.Label("Saida", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("txtSaida", mov.Saida, new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })
+                @*@Html.DropDownList("Vaga", null,
+                "-- SELECIONE --",
+                new { @class = "form-control" })*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input class="btn btn-primary" type="submit" value="Cadastrar" />
+            </div>
+        </div>
+    </fieldset>
+}
+
 

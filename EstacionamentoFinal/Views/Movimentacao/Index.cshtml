@@ -23,11 +23,11 @@
             <td>@movimentacao.Vaga.Setor</td>
             <td>@movimentacao.Entrada</td>
             <td>
-                @Html.ActionLink("Remover", "Remover", "Cliente",
+                @Html.ActionLink("Remover", "Remover", "Movimentacao",
                new { id = movimentacao.IdMovimentacao },
                new { @class = "btn-sm btn-danger" })
 
-                @Html.ActionLink("Alterar", "Alterar", "Cliente",
+                @Html.ActionLink("Alterar", "Alterar", "Movimentacao",
                new { id = movimentacao.IdMovimentacao },
                 new { @class = "btn-sm btn-warning" })
 
