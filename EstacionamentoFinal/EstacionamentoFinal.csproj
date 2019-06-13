@@ -200,6 +200,7 @@
     <Content Include="Views\Setor\Alterar.cshtml" />
     <Content Include="Views\Movimentacao\Index.cshtml" />
     <Content Include="Views\Movimentacao\Cadastrar.cshtml" />
+    <Content Include="Views\Movimentacao\Alterar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

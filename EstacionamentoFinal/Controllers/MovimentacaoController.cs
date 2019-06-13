@@ -33,7 +33,8 @@ namespace EstacionamentoFinal.Controllers
             {
                 Veiculo = ve,
                 Vaga = va,
-                Entrada = DateTime.Now
+                Entrada = DateTime.Now,
+                Saida = DateTime.Now
                 
             };
             MovimentacaoDAO.CadastrarMovimentacao(mov);
@@ -61,6 +62,10 @@ namespace EstacionamentoFinal.Controllers
             //f.CPF = txtCPF;
 
             MovimentacaoDAO.AlterarMovimentacao(mov);
+            return RedirectToAction("Index", "Movimentacao");
+        }
+        public ActionResult SaidaVeiculo (int? id)
+        {
             return RedirectToAction("Index", "Movimentacao");
         }
     }

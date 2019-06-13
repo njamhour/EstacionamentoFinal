@@ -18,7 +18,7 @@ namespace EstacionamentoFinal.DAL
 
         public static List<Movimentacao> RetornarMovimentacoes()
         {
-            return ctx.Movimentacoes.ToList();
+            return ctx.Movimentacoes.Include("Veiculo").Include("Vaga").ToList();
         }
 
         public static void RemoverMovimentacao(Movimentacao mov)
@@ -35,5 +35,13 @@ namespace EstacionamentoFinal.DAL
         {
             return ctx.Movimentacoes.Find(id);
         }
+
+        //public static void AlterarSaida(DateTime Saida)
+        //{
+        //    ctx.Movimentacoes.
+        //    ctx.Entry(Saida).State = System.Data.Entity.EntityState.Modified;
+        //    ctx.SaveChanges();
+        //}
+
     }
 }
