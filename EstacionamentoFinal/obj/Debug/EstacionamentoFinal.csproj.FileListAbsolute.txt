@@ -99,7 +99,6 @@ C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFi
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.SqlServer.dll
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.xml
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.SqlServer.xml
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\ApplicationInsights.config
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\csc.exe
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -159,7 +158,6 @@ C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\Estacion
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.dll
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.pdb
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.RemoverAnotacaoVagas.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.AlterarVaga.resources
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\ApplicationInsights.config
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\csc.exe
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -213,3 +211,6 @@ D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.AlterarVaga.resources
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csprojResolveAssemblyReference.cache
+C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.Restartando.resources
+C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
+C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.alterar_controler_mov.resources

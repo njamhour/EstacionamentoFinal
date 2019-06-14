@@ -28,17 +28,22 @@ namespace EstacionamentoFinal.Controllers
         {
             Veiculo ve = VeiculoDAO.BuscarVeiculoPorId(Veiculo);
             Vaga va = VagasDAO.BuscarVagaPorId(Vaga);
-            
+
+
             Movimentacao mov = new Movimentacao
             {
                 Veiculo = ve,
                 Vaga = va,
                 Entrada = DateTime.Now,
                 Saida = DateTime.Now
-                
-            };
-            MovimentacaoDAO.CadastrarMovimentacao(mov);
 
+            };
+            if (va.Ocupado)
+            {
+                return RedirectToAction("Index", "Movimentacao");
+            }
+            MovimentacaoDAO.CadastrarMovimentacao(mov);
+            VagasDAO.AlterarVagaStatus(va);
             return RedirectToAction("Index", "Movimentacao");
         }
         public ActionResult Remover(int? id)
@@ -56,6 +61,7 @@ namespace EstacionamentoFinal.Controllers
         [HttpPost]
         public ActionResult Alterar(string txtVeiculo, string txtVaga, string txtEntrada, string txtSaida, int hdnId)
         {
+
             DateTime dataEntrada = DateTime.ParseExact(txtEntrada, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
             DateTime dataSaida = DateTime.ParseExact(txtSaida, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
 
@@ -65,17 +71,39 @@ namespace EstacionamentoFinal.Controllers
             mov.Vaga.Identificador = txtVaga;
             mov.Entrada = dataEntrada;
             mov.Saida = dataSaida;
+            mov.Finalizada = false;
+            mov.Pagamento = 0;
 
             Vaga va = VagasDAO.BuscarVagaPorId(mov.Vaga.IdVaga);
-            VagasDAO.AlterarVagaStatus(va);
-            
             MovimentacaoDAO.AlterarMovimentacao(mov);
-            
+            VagasDAO.AlterarVagaStatus(va);
             return RedirectToAction("Index", "Movimentacao");
         }
-        public ActionResult SaidaVeiculo (int? id)
+        public ActionResult Saida(int? id)
         {
+            ViewBag.Movimentacao = MovimentacaoDAO.BuscarMovimentacaoPorId(id);
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Saida(string txtSaida, int txtId)
+        {
+            Movimentacao mov = MovimentacaoDAO.BuscarMovimentacaoPorId(txtId);
+
+            DateTime dataSaida = DateTime.ParseExact(txtSaida, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+            mov.Saida = dataSaida;
+
+            Vaga va = VagasDAO.BuscarVagaPorId(mov.Vaga.IdVaga);
+
+            MovimentacaoDAO.AlterarMovimentacao(mov);
+            VagasDAO.AlterarVagaStatus(va);
+            MovimentacaoDAO.FinalizarMovimentacao(mov);
             return RedirectToAction("Index", "Movimentacao");
+        }
+        public ActionResult Finalizadas()
+        {
+            ViewBag.Movimentacoes = MovimentacaoDAO.RetornarMovimentacoes();
+            ViewBag.DataAtual = DateTime.Now;
+            return View();
         }
     }
 }

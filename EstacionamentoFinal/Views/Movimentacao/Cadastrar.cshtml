@@ -10,10 +10,10 @@
         <legend>Cadastrar Movimentação</legend>
         <div id="Placa" class="form-group">
             @Html.Label("Veiculo", new { @class = "control-label col-sm-2" })
-            
+
             <div class="col-sm-10">
                 @Html.DropDownList("Veiculo", null,
-               "-- SELECIONE --", 
+               "-- SELECIONE --",
                new { @class = "form-control" })
                 @*@Html.TextBox("txtPlaca", "", new { @class = "form-control", @placeholder = "Digite a placa do veículo" })*@
             </div>
@@ -24,7 +24,7 @@
             <div class="col-sm-10">
                 @*@Html.TextBox("txtVaga", "", new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })*@
                 @Html.DropDownList("Vaga", null,
-               "-- SELECIONE --", 
+               "-- SELECIONE --",
                new { @class = "form-control" })
             </div>
         </div>

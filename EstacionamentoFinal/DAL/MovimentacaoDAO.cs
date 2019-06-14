@@ -35,13 +35,13 @@ namespace EstacionamentoFinal.DAL
         {
             return ctx.Movimentacoes.Find(id);
         }
+        public static void FinalizarMovimentacao(Movimentacao mov)
+        {
+            mov.Finalizada = !mov.Finalizada;
+            ctx.Entry(mov).State = System.Data.Entity.EntityState.Modified;
+            ctx.SaveChanges();
+        }
 
-        //public static void AlterarSaida(DateTime Saida)
-        //{
-        //    ctx.Movimentacoes.
-        //    ctx.Entry(Saida).State = System.Data.Entity.EntityState.Modified;
-        //    ctx.SaveChanges();
-        //}
 
     }
 }

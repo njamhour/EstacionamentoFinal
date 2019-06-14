@@ -38,8 +38,6 @@ namespace EstacionamentoFinal.Controllers
             }
             VagasDAO.CadastrarVaga(vagas);
 
-
-
             return RedirectToAction("Index", "Vaga");
         }
         public ActionResult Remover(int? id)
@@ -61,5 +59,10 @@ namespace EstacionamentoFinal.Controllers
             VagasDAO.AlterarVaga(v);
             return RedirectToAction("Index", "Vaga");
         }
+
+        //public ActionResult Historico(Vaga v)
+        //{
+        //    return View(VagasDAO.BuscarHistoricoVaga(v));
+        //}
     }
 }

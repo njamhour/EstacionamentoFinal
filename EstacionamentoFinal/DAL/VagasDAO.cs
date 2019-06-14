@@ -43,6 +43,12 @@ namespace EstacionamentoFinal.DAL
             ctx.Entry(v).State = System.Data.Entity.EntityState.Modified;
             ctx.SaveChanges();
         }
+        //public static List<Vaga> BuscarHistoricoVaga(Vaga v)
+        //{
+        //    return ctx.Vagas.Include("Veiculo").
+        //        Include("Movimentacao").
+        //        Where(x => x.IdVaga.Equals(v.IdVaga)).ToList();
+        //}
 
     }
 }

@@ -25,7 +25,10 @@
         <div id="Veiculo" class="form-group">
             @Html.Label("Veiculo", new { @class = "control-label col-sm-2" })
             <div class="col-sm-10">
-                @Html.TextBox("txtVeiculo", mov.Veiculo.Placa, new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })
+                @Html.TextBox("txtVeiculo", mov.Veiculo.Placa,
+               new { @class = "form-control",
+                   @placeholder = "Digite a placa do veículo",
+                   @readonly = ""})
                 @*@Html.DropDownList("Vaga", null,
                 "-- SELECIONE --",
                 new { @class = "form-control" })*@
@@ -35,7 +38,11 @@
         <div id="Vaga" class="form-group">
             @Html.Label("Vaga", new { @class = "control-label col-sm-2" })
             <div class="col-sm-10">
-                @Html.TextBox("txtVaga", mov.Vaga.Identificador, new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })
+                @Html.TextBox("txtVaga", mov.Vaga.Identificador, new {
+               @class = "form-control",
+               @placeholder = "Digite a numeração da vaga",
+               @readonly = ""
+           })
                 @*@Html.DropDownList("Vaga", null,
                 "-- SELECIONE --",
                 new { @class = "form-control" })*@
@@ -45,7 +52,11 @@
         <div id="Entrada" class="form-group">
             @Html.Label("Entrada", new { @class = "control-label col-sm-2" })
             <div class="col-sm-10">
-                @Html.TextBox("txtEntrada", mov.Entrada, new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })
+                @Html.TextBox("txtEntrada", mov.Entrada,
+               new { @class = "form-control",
+                   @placeholder = "Digite a numeração da vaga",
+                   @readonly = ""
+               })
                 @*@Html.DropDownList("Vaga", null,
                 "-- SELECIONE --",
                 new { @class = "form-control" })*@
@@ -55,7 +66,11 @@
         <div id="Saida" class="form-group">
             @Html.Label("Saida", new { @class = "control-label col-sm-2" })
             <div class="col-sm-10">
-                @Html.TextBox("txtSaida", mov.Saida, new { @class = "form-control", @placeholder = "Digite a numeração da vaga" })
+                @Html.TextBox("txtSaida", mov.Saida,
+                 new { @class = "form-control",
+                     @placeholder = "Digite a numeração da vaga",
+                     @readonly = ""
+                 })
                 @*@Html.DropDownList("Vaga", null,
                 "-- SELECIONE --",
                 new { @class = "form-control" })*@
