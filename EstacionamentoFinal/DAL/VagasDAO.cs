@@ -37,5 +37,12 @@ namespace EstacionamentoFinal.DAL
             return ctx.Vagas.Find(identificador);
         }
 
+        public static void AlterarVagaStatus(Vaga v)
+        {
+            v.Ocupado = !v.Ocupado;
+            ctx.Entry(v).State = System.Data.Entity.EntityState.Modified;
+            ctx.SaveChanges();
+        }
+
     }
 }

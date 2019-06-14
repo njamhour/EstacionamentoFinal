@@ -66,10 +66,11 @@ namespace EstacionamentoFinal.Controllers
             mov.Entrada = dataEntrada;
             mov.Saida = dataSaida;
 
-            //f.Nome = txtNome;
-            //f.CPF = txtCPF;
-
+            Vaga va = VagasDAO.BuscarVagaPorId(mov.Vaga.IdVaga);
+            VagasDAO.AlterarVagaStatus(va);
+            
             MovimentacaoDAO.AlterarMovimentacao(mov);
+            
             return RedirectToAction("Index", "Movimentacao");
         }
         public ActionResult SaidaVeiculo (int? id)

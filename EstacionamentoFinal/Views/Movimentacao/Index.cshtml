@@ -14,14 +14,21 @@
         <th>Placa</th>
         <th>Vaga</th>
         <th>Data/Hora Entrada</th>
+        <th>Data/Hora Saida</th>
         <th>Ações</th>
     </tr>
     @foreach (EstacionamentoFinal.Models.Movimentacao movimentacao in movimentacoes)
     {
         <tr>
             <td>@movimentacao.Veiculo.Placa</td>
-            <td>@movimentacao.Vaga.Setor</td>
+            <td>@movimentacao.Vaga.Identificador</td>
             <td>@movimentacao.Entrada</td>
+
+            @if(DateTime.Equals(movimentacao.Entrada, movimentacao.Saida))
+            {
+                <td>Não Saiu</td> 
+            } else { 
+                <td>@movimentacao.Saida </td>}
             <td>
                 @Html.ActionLink("Remover", "Remover", "Movimentacao",
                new { id = movimentacao.IdMovimentacao },

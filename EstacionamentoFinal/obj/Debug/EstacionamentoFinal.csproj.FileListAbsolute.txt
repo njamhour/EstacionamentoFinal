@@ -212,3 +212,4 @@ D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.pdb
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.AlterarVaga.resources
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
+C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csprojResolveAssemblyReference.cache
