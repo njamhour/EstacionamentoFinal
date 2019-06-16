@@ -1,7 +1,27 @@
-﻿
-@{
-    ViewBag.Title = "Historico";
-}
+﻿@using EstacionamentoFinal.Models
 
-<h2>Historico</h2>
 
+    @{
+        ViewBag.Title = "Alterar";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+        //Vaga v = ViewBag.Vagas;
+        List<EstacionamentoFinal.Models.Movimentacao> movimentacao = ViewBag.Vagas;
+    }
+
+    <div class="container">
+        <table class="table table-stripped table-bordered">
+            <tr>
+                <th>Placa</th>
+                <th>Vaga</th>
+                <th>Entrada</th>
+                <th>Saida</th>
+            </tr>
+            @*@foreach (EstacionamentoFinal.Models.Movimentacao)
+            {
+                <tr>
+                    <td>@</td>
+                    <td>vaga.Identificador</td>
+                </tr>
+            }*@
+</table>
+</div>

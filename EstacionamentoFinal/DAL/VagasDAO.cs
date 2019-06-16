@@ -49,6 +49,10 @@ namespace EstacionamentoFinal.DAL
         //        Include("Movimentacao").
         //        Where(x => x.IdVaga.Equals(v.IdVaga)).ToList();
         //}
+        public static List<Vaga> RetornarVagasLivres()
+        {
+            return ctx.Vagas.Include("Setor").Where(x => x.Ocupado == false).ToList();
+        }
 
     }
 }

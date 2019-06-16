@@ -60,9 +60,10 @@ namespace EstacionamentoFinal.Controllers
             return RedirectToAction("Index", "Vaga");
         }
 
-        //public ActionResult Historico(Vaga v)
-        //{
-        //    return View(VagasDAO.BuscarHistoricoVaga(v));
-        //}
+        public ActionResult Historico(int? id)
+        {
+            ViewBag.Vagas = MovimentacaoDAO.RetornarHistoricoMovimentacoesVaga(id);
+            return View();
+        }
     }
 }

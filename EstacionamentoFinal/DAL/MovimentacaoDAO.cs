@@ -41,6 +41,10 @@ namespace EstacionamentoFinal.DAL
             ctx.Entry(mov).State = System.Data.Entity.EntityState.Modified;
             ctx.SaveChanges();
         }
+        public static List<Movimentacao> RetornarHistoricoMovimentacoesVaga(int? id)
+        {
+            return ctx.Movimentacoes.Include("Veiculo").Include("Vaga").Where(x => x.Vaga.IdVaga == id).ToList();
+        }
 
 
     }

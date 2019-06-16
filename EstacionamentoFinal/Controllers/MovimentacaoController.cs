@@ -20,7 +20,7 @@ namespace EstacionamentoFinal.Controllers
         public ActionResult Cadastrar()
         {
             ViewBag.Veiculo = new SelectList(VeiculoDAO.RetornarVeiculos(), "IdVeiculo", "Placa");
-            ViewBag.Vaga = new SelectList(VagasDAO.RetornarVagas(), "IdVaga", "Identificador");
+            ViewBag.Vaga = new SelectList(VagasDAO.RetornarVagasLivres(), "IdVaga", "Identificador");
             return View();
         }
         [HttpPost]
