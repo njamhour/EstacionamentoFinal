@@ -25,7 +25,7 @@
             <tr>
                 <td>@movimentacao.Veiculo.Placa</td>
                 <td>@movimentacao.Vaga.Identificador</td>
-                <td>@movimentacao.Entrada.ToString("dd/MM HH:mm")</td>
+                <td>@movimentacao.Entrada.ToString("dd/MM - HH:mm")</td>
 
                 @if (DateTime.Equals(movimentacao.Entrada, movimentacao.Saida))
                 {
@@ -33,7 +33,7 @@
                 }
                 else
                 {
-                    <td>@movimentacao.Saida.ToString("dd/MM HH:mm") </td>}
+                    <td>@movimentacao.Saida.ToString("dd/MM - HH:mm") </td>}
                 <td>
                     @Html.ActionLink("Remover", "Remover", "Movimentacao",
                new { id = movimentacao.IdMovimentacao },
@@ -45,7 +45,7 @@
 
                     @Html.ActionLink("Saida", "Saida", "Movimentacao",
                new { id = movimentacao.IdMovimentacao },
-               new { @class = "btn-sm brn-primary" })
+               new { @class = "btn-sm btn-primary" })
                 </td>
             </tr>
         }

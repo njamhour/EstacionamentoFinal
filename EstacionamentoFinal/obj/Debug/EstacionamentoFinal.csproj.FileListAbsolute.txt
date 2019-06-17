@@ -214,3 +214,4 @@ C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFi
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.Restartando.resources
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.alterar_controler_mov.resources
+C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.validacoes_Veiculo.resources

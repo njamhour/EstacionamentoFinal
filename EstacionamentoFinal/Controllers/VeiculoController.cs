@@ -54,6 +54,7 @@ namespace EstacionamentoFinal.Controllers
             v.Cor = veiculo.Cor;
             v.Modelo = veiculo.Modelo;
             v.Fabricante = veiculo.Fabricante;
+            v.Estacionado = false;
 
             VeiculoDAO.AlterarVeiculo(v);
             return RedirectToAction("Index", "Veiculo");

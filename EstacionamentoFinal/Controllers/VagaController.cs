@@ -62,7 +62,8 @@ namespace EstacionamentoFinal.Controllers
 
         public ActionResult Historico(int? id)
         {
-            ViewBag.Vagas = MovimentacaoDAO.RetornarHistoricoMovimentacoesVaga(id);
+            ViewBag.Movimentacao = MovimentacaoDAO.RetornarHistoricoMovimentacoesVaga(id);
+            
             return View();
         }
     }

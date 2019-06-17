@@ -18,6 +18,7 @@ namespace EstacionamentoFinal.Models
         public string Modelo { get; set; }
         public string Fabricante { get; set; }
         public CategoriaVeiculo CategoriaVeiculo { get; set; }
-        
+        public bool Estacionado { get; set; }
+
     }
 }

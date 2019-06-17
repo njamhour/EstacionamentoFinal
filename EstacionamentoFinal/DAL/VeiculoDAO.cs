@@ -26,6 +26,10 @@ namespace EstacionamentoFinal.DAL
         {
             return ctx.Veiculos.Include("CategoriaVeiculo").ToList();
         }
+        public static List<Veiculo> RetornarVeiculosLivres()
+        {
+            return ctx.Veiculos.Include("CategoriaVeiculo").Where(x => x.Estacionado == false).ToList();
+        }
 
         public static Veiculo BuscarVeiculoPorPlaca(Veiculo ve)
         {
@@ -45,6 +49,13 @@ namespace EstacionamentoFinal.DAL
 
         public static void AlterarVeiculo(Veiculo ve)
         {
+            ctx.Entry(ve).State = System.Data.Entity.EntityState.Modified;
+            ctx.SaveChanges();
+        }
+
+        public static void AlterarVeiculoStatus(Veiculo ve)
+        {
+            ve.Estacionado = !ve.Estacionado;
             ctx.Entry(ve).State = System.Data.Entity.EntityState.Modified;
             ctx.SaveChanges();
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EstacionamentoFinal.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,10 @@ namespace EstacionamentoFinal.Controllers
         // GET: Index
         public ActionResult Index()
         {
+            ViewBag.Movimentacoes = MovimentacaoDAO.RetornarMovimentacoes();
+            ViewBag.VagasLivres = VagasDAO.RetornarVagasLivres();
+            ViewBag.VagasTotais = VagasDAO.RetornarVagas();
+            ViewBag.Veiculos = VeiculoDAO.RetornarVeiculos();
             return View();
         }
     }

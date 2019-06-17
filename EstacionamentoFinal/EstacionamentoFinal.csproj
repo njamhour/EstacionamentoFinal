@@ -157,6 +157,10 @@
     <Compile Include="Migrations\201906141939596_alterar_controler_mov.Designer.cs">
       <DependentUpon>201906141939596_alterar_controler_mov.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906171011591_validacoes_Veiculo.cs" />
+    <Compile Include="Migrations\201906171011591_validacoes_Veiculo.Designer.cs">
+      <DependentUpon>201906171011591_validacoes_Veiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoriaVeiculo.cs" />
     <Compile Include="Models\Context.cs" />
@@ -217,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906141939596_alterar_controler_mov.resx">
       <DependentUpon>201906141939596_alterar_controler_mov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906171011591_validacoes_Veiculo.resx">
+      <DependentUpon>201906171011591_validacoes_Veiculo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

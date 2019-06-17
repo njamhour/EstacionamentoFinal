@@ -19,7 +19,7 @@ namespace EstacionamentoFinal.Controllers
         }
         public ActionResult Cadastrar()
         {
-            ViewBag.Veiculo = new SelectList(VeiculoDAO.RetornarVeiculos(), "IdVeiculo", "Placa");
+            ViewBag.Veiculo = new SelectList(VeiculoDAO.RetornarVeiculosLivres(), "IdVeiculo", "Placa");
             ViewBag.Vaga = new SelectList(VagasDAO.RetornarVagasLivres(), "IdVaga", "Identificador");
             return View();
         }
@@ -44,6 +44,7 @@ namespace EstacionamentoFinal.Controllers
             }
             MovimentacaoDAO.CadastrarMovimentacao(mov);
             VagasDAO.AlterarVagaStatus(va);
+            VeiculoDAO.AlterarVeiculoStatus(ve);
             return RedirectToAction("Index", "Movimentacao");
         }
         public ActionResult Remover(int? id)
@@ -75,8 +76,10 @@ namespace EstacionamentoFinal.Controllers
             mov.Pagamento = 0;
 
             Vaga va = VagasDAO.BuscarVagaPorId(mov.Vaga.IdVaga);
+            Veiculo ve = VeiculoDAO.BuscarVeiculoPorId(mov.Veiculo.IdVeiculo);
             MovimentacaoDAO.AlterarMovimentacao(mov);
             VagasDAO.AlterarVagaStatus(va);
+            //VeiculoDAO.AlterarVeiculoStatus(ve);
             return RedirectToAction("Index", "Movimentacao");
         }
         public ActionResult Saida(int? id)
@@ -92,11 +95,20 @@ namespace EstacionamentoFinal.Controllers
             DateTime dataSaida = DateTime.ParseExact(txtSaida, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
             mov.Saida = dataSaida;
 
+            //DateTime EntradaCalculo = mov.Entrada;
+            //System.TimeSpan CalculoTempo = dataSaida - EntradaCalculo;
+            ////CalculoTempoString
+
+            //double Valor = CalculoTempo
+
             Vaga va = VagasDAO.BuscarVagaPorId(mov.Vaga.IdVaga);
+            Veiculo ve = VeiculoDAO.BuscarVeiculoPorId(mov.Veiculo.IdVeiculo);
+            //mov.Pagamento = teste;
 
             MovimentacaoDAO.AlterarMovimentacao(mov);
             VagasDAO.AlterarVagaStatus(va);
             MovimentacaoDAO.FinalizarMovimentacao(mov);
+            VeiculoDAO.AlterarVeiculoStatus(ve);
             return RedirectToAction("Index", "Movimentacao");
         }
         public ActionResult Finalizadas()
