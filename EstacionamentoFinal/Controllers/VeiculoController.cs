@@ -59,5 +59,34 @@ namespace EstacionamentoFinal.Controllers
             VeiculoDAO.AlterarVeiculo(v);
             return RedirectToAction("Index", "Veiculo");
         }
+
+        public ActionResult IndexCategoria()
+        {
+            ViewBag.VeiculosCategoria = CategoriaVeiculoDAO.RetornarCategoria();
+            return View();
+        }
+        public ActionResult CadastrarCategoria()
+        {
+            //ViewBag.VeiculosCategoria = VeiculoDAO.RetornarVeiculosCategoria();
+            return View();
+        }
+        [HttpPost]
+        public ActionResult CadastrarCategoria(string Tamanho, string Valor)
+        {
+            CategoriaVeiculo cv = new CategoriaVeiculo();
+            double ValorConvertido = Convert.ToDouble(Valor);
+
+            cv.Tamanho = Tamanho;
+            cv.Valor = ValorConvertido;
+            CategoriaVeiculoDAO.CadastrarCategoria(cv);
+            return RedirectToAction("IndexCategoria", "Veiculo");
+            
+        }
+        public ActionResult RemoverCategoria(int? id)
+        {
+            CategoriaVeiculoDAO.RemoverCategoria(CategoriaVeiculoDAO.BuscarCategoriaPorId(id));
+            return RedirectToAction("IndexCategoria", "Veiculo");
+        }
     }
-}
+
+    }

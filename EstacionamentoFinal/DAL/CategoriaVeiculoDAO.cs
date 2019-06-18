@@ -18,5 +18,18 @@ namespace EstacionamentoFinal.DAL
         {
             return ctx.CategoriaVeiculo.Find(id);
         }
+
+        public static bool CadastrarCategoria(CategoriaVeiculo cv)
+        {
+            ctx.CategoriaVeiculo.Add(cv);
+            ctx.SaveChanges();
+            return true;
+        }
+
+        public static void RemoverCategoria(CategoriaVeiculo cv)
+        {
+            ctx.CategoriaVeiculo.Remove(cv);
+            ctx.SaveChanges();
+        }
     }
 }

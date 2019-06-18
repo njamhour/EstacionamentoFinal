@@ -149,17 +149,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201906141750232_Restartando.cs" />
-    <Compile Include="Migrations\201906141750232_Restartando.Designer.cs">
-      <DependentUpon>201906141750232_Restartando.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906141939596_alterar_controler_mov.cs" />
-    <Compile Include="Migrations\201906141939596_alterar_controler_mov.Designer.cs">
-      <DependentUpon>201906141939596_alterar_controler_mov.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906171011591_validacoes_Veiculo.cs" />
-    <Compile Include="Migrations\201906171011591_validacoes_Veiculo.Designer.cs">
-      <DependentUpon>201906171011591_validacoes_Veiculo.cs</DependentUpon>
+    <Compile Include="Migrations\201906172223177_CriarBanco.cs" />
+    <Compile Include="Migrations\201906172223177_CriarBanco.Designer.cs">
+      <DependentUpon>201906172223177_CriarBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoriaVeiculo.cs" />
@@ -202,6 +194,10 @@
     <Content Include="Views\Movimentacao\Saida.cshtml" />
     <Content Include="Views\Vaga\Historico.cshtml" />
     <Content Include="Views\Movimentacao\Finalizadas.cshtml" />
+    <Content Include="Views\Veiculo\Alterar.cshtml" />
+    <Content Include="Views\Veiculo\CadastrarCategoria.cshtml" />
+    <Content Include="Views\Veiculo\AlterarCategoria.cshtml" />
+    <Content Include="Views\Veiculo\IndexCategoria.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -216,14 +212,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906141750232_Restartando.resx">
-      <DependentUpon>201906141750232_Restartando.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906141939596_alterar_controler_mov.resx">
-      <DependentUpon>201906141939596_alterar_controler_mov.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906171011591_validacoes_Veiculo.resx">
-      <DependentUpon>201906171011591_validacoes_Veiculo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906172223177_CriarBanco.resx">
+      <DependentUpon>201906172223177_CriarBanco.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

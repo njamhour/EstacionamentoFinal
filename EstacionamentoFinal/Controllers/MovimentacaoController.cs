@@ -107,8 +107,9 @@ namespace EstacionamentoFinal.Controllers
 
             MovimentacaoDAO.AlterarMovimentacao(mov);
             VagasDAO.AlterarVagaStatus(va);
-            MovimentacaoDAO.FinalizarMovimentacao(mov);
             VeiculoDAO.AlterarVeiculoStatus(ve);
+            MovimentacaoDAO.FinalizarMovimentacao(mov);
+            
             return RedirectToAction("Index", "Movimentacao");
         }
         public ActionResult Finalizadas()

@@ -59,5 +59,9 @@ namespace EstacionamentoFinal.DAL
             ctx.Entry(ve).State = System.Data.Entity.EntityState.Modified;
             ctx.SaveChanges();
         }
+        public static List<Veiculo> RetornarVeiculosCategoria()
+        {
+            return ctx.Veiculos.Include("CategoriaVeiculo").ToList();
+        }
     }
 }
