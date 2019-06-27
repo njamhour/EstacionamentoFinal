@@ -1,7 +1,65 @@
-﻿
-@{
-    ViewBag.Title = "Alterar";
+﻿@*@model EstacionamentoFinal.Models.Veiculo*@
+@using EstacionamentoFinal.Models
+
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Veiculo v = ViewBag.Veiculos;
 }
 
-<h2>Alterar</h2>
+@using (Html.BeginForm("Alterar", "Veiculo", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+{
+    @Html.Hidden("hdnId", v.IdVeiculo)
+    <fieldset>
+        <legend>Alterar Veiculo</legend>
+        @*@Html.ValidationSummary("", new { @class = "text-danger" })*@
+        <div id = "hdnId" class="form-group">
+            @Html.Label("Id", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("txtId", v.IdVeiculo, new { @class = "form-control", @placeholder = "", @readonly = ""})
+            </div>
+        </div>
 
+        <div id="Placa" class="form-group">
+            @*@Html.LabelFor(model => model.Placa, new { @class = "control-label col-sm2" })*@
+            @Html.Label("Placa", new { @class = "control-label col-sm-2"})
+            <div class="col-sm-10">
+                @Html.TextBox("txtPlaca", v.Placa, new { @class = "form-control", @placeholder = ""})
+                @*@Html.TextBoxFor(model => model.Placa, new { @class = "form-control", @placeholder = "Placa do veículo" })*@
+                @*@Html.ValidationMessageFor(model => model.Placa, null, new { @class = "text-danger" })*@
+            </div>
+        </div>
+
+        <div id="Cor" class="form-group">
+            @Html.Label("Cor", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("txtCor", v.Cor, new { @class = "form-control", @placeholder = "" })
+                @*@Html.TextBoxFor(model => model.Placa, new { @class = "form-control", @placeholder = "Placa do veículo" })*@
+                @*@Html.ValidationMessageFor(model => model.Placa, null, new { @class = "text-danger" })*@
+            </div>
+        </div>
+
+        <div id="Modelo" class="form-group">
+            @Html.Label("Modelo", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("txtModelo", v.Modelo, new { @class = "form-control", @placeholder = "" })
+                @*@Html.TextBoxFor(model => model.Placa, new { @class = "form-control", @placeholder = "Placa do veículo" })*@
+                @*@Html.ValidationMessageFor(model => model.Placa, null, new { @class = "text-danger" })*@
+            </div>
+        </div>
+
+        <div id="Fabricante" class="form-group">
+            @Html.Label("Fabricante", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("txtFabricante", v.Fabricante, new { @class = "form-control", @placeholder = "" })
+                @*@Html.TextBoxFor(model => model.Placa, new { @class = "form-control", @placeholder = "Placa do veículo" })*@
+                @*@Html.ValidationMessageFor(model => model.Placa, null, new { @class = "text-danger" })*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input class="btn btn-primary" type="submit" value="Alterar" />
+            </div>
+        </div>
+    </fieldset>
+}

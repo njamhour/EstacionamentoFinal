@@ -31,5 +31,11 @@ namespace EstacionamentoFinal.DAL
             ctx.CategoriaVeiculo.Remove(cv);
             ctx.SaveChanges();
         }
+
+        public static void AlterarCategoria(CategoriaVeiculo cv)
+        {
+            ctx.Entry(cv).State = System.Data.Entity.EntityState.Modified;
+            ctx.SaveChanges();
+        }
     }
 }

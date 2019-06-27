@@ -149,9 +149,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201906172223177_CriarBanco.cs" />
-    <Compile Include="Migrations\201906172223177_CriarBanco.Designer.cs">
-      <DependentUpon>201906172223177_CriarBanco.cs</DependentUpon>
+    <Compile Include="Migrations\201906270757209_CriaBanco.cs" />
+    <Compile Include="Migrations\201906270757209_CriaBanco.Designer.cs">
+      <DependentUpon>201906270757209_CriaBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoriaVeiculo.cs" />
@@ -162,8 +162,10 @@
     <Compile Include="Models\Vaga.cs" />
     <Compile Include="Models\Veiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\CalculoHora.cs" />
     <Compile Include="Util\EncurtarSetor.cs" />
     <Compile Include="Util\SubtrairHora.cs" />
+    <Compile Include="Util\ValidaPlaca.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -212,8 +214,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906172223177_CriarBanco.resx">
-      <DependentUpon>201906172223177_CriarBanco.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906270757209_CriaBanco.resx">
+      <DependentUpon>201906270757209_CriaBanco.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -232,13 +234,12 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>2050</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:9999/</IISUrl>
+          <IISUrl>http://localhost:10000</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://localhost:9999/</IISAppRootUrl>
+          <IISAppRootUrl>http://localhost:10000/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl>http://localhost:9999</CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

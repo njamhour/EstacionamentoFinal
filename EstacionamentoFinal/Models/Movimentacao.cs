@@ -20,5 +20,6 @@ namespace EstacionamentoFinal.Models
         public DateTime Saida { get; set; }
         public bool Finalizada { get; set; }
         public double Pagamento { get; set; }
+        public int Diferenca { get; set; }
     }
 }

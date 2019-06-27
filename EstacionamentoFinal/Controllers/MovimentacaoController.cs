@@ -92,9 +92,20 @@ namespace EstacionamentoFinal.Controllers
         {
             Movimentacao mov = MovimentacaoDAO.BuscarMovimentacaoPorId(txtId);
 
-            DateTime dataSaida = DateTime.ParseExact(txtSaida, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+            DateTime dataSaida = DateTime.ParseExact(txtSaida, "dd/MM HH:mm", System.Globalization.CultureInfo.InvariantCulture);
             mov.Saida = dataSaida;
 
+            CategoriaVeiculo cv = CategoriaVeiculoDAO.BuscarCategoriaPorId(mov.Veiculo.CategoriaVeiculo.IdCategoria);
+            TimeSpan TempoTeste = (mov.Saida.AddMinutes(1) - mov.Entrada.AddMinutes(1));
+            double Minutos = TempoTeste.TotalMinutes;
+
+            //TimeSpan TempoTotal = mov.Saida - mov.Entrada;
+            //int Teste = MinutosTotais.Minutes;
+            //if(Teste.Minutes > 30)
+            double Pagamento = (Util.CalculoHora.CalcularHora(Minutos, cv.IdCategoria));
+
+            mov.Diferenca = Convert.ToInt32(Minutos);
+            mov.Pagamento = Pagamento;
             //DateTime EntradaCalculo = mov.Entrada;
             //System.TimeSpan CalculoTempo = dataSaida - EntradaCalculo;
             ////CalculoTempoString

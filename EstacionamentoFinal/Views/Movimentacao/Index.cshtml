@@ -30,7 +30,7 @@
             {
                 <td>Não Saiu</td> 
             } else { 
-                <td>@movimentacao.Saida.ToString("dd/MM - HH:mm") </td>}
+                <td>@*@movimentacao.Saida.ToString("dd/MM - HH:mm")*@ Não Saiu</td>}
             <td>
                 @Html.ActionLink("Remover", "Remover", "Movimentacao",
                new { id = movimentacao.IdMovimentacao },

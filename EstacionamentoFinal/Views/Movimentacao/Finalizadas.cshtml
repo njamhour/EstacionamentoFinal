@@ -18,6 +18,7 @@
         <th>Data/Hora Saida</th>
         <th>Valor</th>
         <th>Ações</th>
+        <th>Teste</th>
     </tr>
     @foreach (EstacionamentoFinal.Models.Movimentacao movimentacao in movimentacoes)
     {
@@ -36,7 +37,7 @@
                 else
                 {
                     <td>@movimentacao.Saida.ToString("dd/MM - HH:mm") </td>}
-                <td>@movimentacao.Pagamento</td>
+                <td>R$ @movimentacao.Pagamento</td>
                 <td>
                     @Html.ActionLink("Remover", "Remover", "Movimentacao",
                new { id = movimentacao.IdMovimentacao },
@@ -47,6 +48,7 @@
                new { @class = "btn-sm btn-warning" })
 
                 </td>
+                <td>@movimentacao.Diferenca</td>
             </tr>
         }
     }

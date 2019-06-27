@@ -26,7 +26,7 @@
         <div id="Entrada" class="form-group">
             @Html.Label("Entrada", new { @class = "control-label col-sm-2" })
             <div class="col-sm-10">
-                @Html.TextBox("txtEntrada", mov.Entrada, new { @class = "form-control",
+                @Html.TextBox("txtEntrada", mov.Entrada.ToString("dd/MM HH:mm"), new { @class = "form-control",
                 @placeholder = "",
                 @readonly = "" })
                 @*@Html.DropDownList("Vaga", null,
@@ -38,7 +38,7 @@
         <div id="Saida" class="form-group">
             @Html.Label("Saida", new { @class = "control-label col-sm-2" })
             <div class="col-sm-10">
-                @Html.TextBox("txtSaida", mov.Saida,
+                @Html.TextBox("txtSaida", mov.Saida.ToString("dd/MM HH:mm"),
                new { @class = "form-control",
                      @placeholder = "" })
                 @*@Html.DropDownList("Vaga", null,

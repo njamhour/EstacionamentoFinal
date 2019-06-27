@@ -29,9 +29,13 @@ namespace EstacionamentoFinal.Controllers
             ViewBag.CategoriaVeiculo = new SelectList(CategoriaVeiculoDAO.RetornarCategoria(), "IdCategoria", "Tamanho");
 
             v.CategoriaVeiculo = CategoriaVeiculoDAO.BuscarCategoriaPorId(CategoriaVeiculo);
-            if (VeiculoDAO.CadastrarVeiculo(v))
+            if (Util.ValidaPlaca.PlacaValida(v.Placa))
             {
-                return RedirectToAction("Index", "Veiculo");
+                if (VeiculoDAO.CadastrarVeiculo(v))
+                {
+                    return RedirectToAction("Index", "Veiculo");
+                }
+                return View(v);
             }
             return View(v);
         }
@@ -43,21 +47,32 @@ namespace EstacionamentoFinal.Controllers
         }
         public ActionResult Alterar(int? id)
         {
-            return View(VeiculoDAO.BuscarVeiculoPorId(id));
+            ViewBag.Veiculos = VeiculoDAO.BuscarVeiculoPorId(id);
+            return View();
         }
         [HttpPost]
-        public ActionResult Alterar(Veiculo veiculo)
+        public ActionResult Alterar(string txtPlaca, string txtCor, string txtModelo, string txtFabricante, int txtId)
         {
-            Veiculo v = VeiculoDAO.BuscarVeiculoPorId(veiculo.IdVeiculo);
+            Veiculo v = VeiculoDAO.BuscarVeiculoPorId(txtId);
 
-            v.Placa = veiculo.Placa;
-            v.Cor = veiculo.Cor;
-            v.Modelo = veiculo.Modelo;
-            v.Fabricante = veiculo.Fabricante;
-            v.Estacionado = false;
+            v.Placa = txtPlaca;
+            v.Cor = txtCor;
+            v.Modelo = txtModelo;
+            v.Fabricante = txtFabricante;
 
-            VeiculoDAO.AlterarVeiculo(v);
-            return RedirectToAction("Index", "Veiculo");
+            //if(!v.Estacionado)
+            //{
+            if (Util.ValidaPlaca.PlacaValida(v.Placa))
+            {
+                VeiculoDAO.AlterarVeiculo(v);
+                return RedirectToAction("Index", "Veiculo");
+            }
+            else
+            {
+                return RedirectToAction("Index", "Veiculo");
+            }
+
+            
         }
 
         public ActionResult IndexCategoria()
@@ -86,6 +101,25 @@ namespace EstacionamentoFinal.Controllers
         {
             CategoriaVeiculoDAO.RemoverCategoria(CategoriaVeiculoDAO.BuscarCategoriaPorId(id));
             return RedirectToAction("IndexCategoria", "Veiculo");
+        }
+        public ActionResult AlterarCategoria(int? id)
+        {
+            ViewBag.CategoriaVeiculos = CategoriaVeiculoDAO.BuscarCategoriaPorId(id);
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AlterarCategoria(int txtId, string txtValor, string txtTamanho)
+        {
+            double dValor = Convert.ToDouble(txtValor);
+            CategoriaVeiculo cv = CategoriaVeiculoDAO.BuscarCategoriaPorId(txtId);
+
+            cv.Tamanho = txtTamanho;
+            cv.Valor = dValor;
+
+            CategoriaVeiculoDAO.AlterarCategoria(cv);
+            //ViewBag.Veiculos = VeiculoDAO.BuscarVeiculoPorId(id);
+            return RedirectToAction("IndexCategoria", "Veiculo");
+
         }
     }
 
