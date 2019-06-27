@@ -13,7 +13,9 @@
 <table class="table table-striped table-bordered">
     <tr>
         <th>Placa</th>
+        <th>Cor</th>
         <th>Modelo</th>
+        <th>Fabricante</th>
         <th>Categoria</th>
         <th>Ações</th>
     </tr>
@@ -21,7 +23,9 @@
     {
         <tr>
             <td>@veiculo.Placa</td>
+            <td>@veiculo.Cor</td>
             <td>@veiculo.Modelo</td>
+            <td>@veiculo.Fabricante</td>
             <td>@veiculo.CategoriaVeiculo.Tamanho</td>
             <td>
                 @Html.ActionLink("Remover", "Remover", "Veiculo",

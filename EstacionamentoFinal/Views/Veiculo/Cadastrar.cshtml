@@ -8,7 +8,7 @@
         <div id="Placa" class="form-group">
             @Html.LabelFor(model => model.Placa, new { @class = "control-label col-sm2" })
             <div class="col-sm-10">
-                @Html.TextBoxFor(model => model.Placa, new { @class = "form-control", @placeholder = "Placa do veículo" })
+                @Html.TextBoxFor(model => model.Placa, new { @class = "form-control", @placeholder = "Placa do veículo (AAA-1234)" })
                 @Html.ValidationMessageFor(model => model.Placa, null, new { @class = "text-danger"})
             </div>
         </div>
@@ -16,7 +16,7 @@
         <div id="Cor" class="form-group">
             @Html.LabelFor(model => model.Cor, new { @class = "control-label col-sm2" })
             <div class="col-sm-10">
-                @Html.TextBoxFor(model => model.Cor, new { @class = "form-control", @placeholder = "Placa do veículo" })
+                @Html.TextBoxFor(model => model.Cor, new { @class = "form-control", @placeholder = "Cor do veículo" })
                 @Html.ValidationMessageFor(model => model.Cor, null, new { @class = "text-danger" })
             </div>
         </div>
@@ -24,7 +24,7 @@
         <div id="Modelo" class="form-group">
             @Html.LabelFor(model => model.Modelo, new { @class = "control-label col-sm2" })
             <div class="col-sm-10">
-                @Html.TextBoxFor(model => model.Modelo, new { @class = "form-control", @placeholder = "Placa do veículo" })
+                @Html.TextBoxFor(model => model.Modelo, new { @class = "form-control", @placeholder = "Modelo do veículo" })
                 @Html.ValidationMessageFor(model => model.Modelo, null, new { @class = "text-danger" })
             </div>
         </div>
@@ -32,7 +32,7 @@
         <div id="Fabricante" class="form-group">
             @Html.LabelFor(model => model.Fabricante, new { @class = "control-label col-sm2" })
             <div class="col-sm-10">
-                @Html.TextBoxFor(model => model.Fabricante, new { @class = "form-control", @placeholder = "Placa do veículo" })
+                @Html.TextBoxFor(model => model.Fabricante, new { @class = "form-control", @placeholder = "Fabricante do veículo" })
                 @Html.ValidationMessageFor(model => model.Fabricante, null, new { @class = "text-danger" })
             </div>
         </div>
