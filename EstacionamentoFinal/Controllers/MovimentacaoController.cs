@@ -134,5 +134,16 @@ namespace EstacionamentoFinal.Controllers
             ViewBag.DataAtual = DateTime.Now;
             return View();
         }
+
+        public ActionResult Buscar()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult BuscarMovimentacaoData(DateTime DataInicio, DateTime DataSaida)
+        {
+            ViewBag.Movimentacao = MovimentacaoDAO.BuscarMovimentacaoPorData(DataInicio, DataSaida);
+            return View();
+        }
     }
 }

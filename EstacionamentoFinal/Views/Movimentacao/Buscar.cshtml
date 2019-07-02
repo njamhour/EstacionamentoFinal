@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Buscar";
+}
+<h2>Buscar Movimentação</h2>
+
+@using (Html.BeginForm("BuscarMovimentacaoData", "Movimentacao", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <p>Data/Hora Entrada</p>
+    <input type="datetime-local" class="form-control" id="DataInicio" name="DataInicio"/>
+    <br />
+    <p>Data/hora Saida</p>
+    <input type="datetime-local" class="form-control" id="DataSaida" name="DataSaida" />
+    <br />
+    <input type="submit" value="Pesquisar" />
+}
+

@@ -225,6 +225,8 @@
     <Content Include="Views\Veiculo\AlterarCategoria.cshtml" />
     <Content Include="Views\Veiculo\IndexCategoria.cshtml" />
     <Content Include="Views\WebService\Index.cshtml" />
+    <Content Include="Views\Movimentacao\Buscar.cshtml" />
+    <Content Include="Views\Movimentacao\BuscarMovimentacaoData.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
