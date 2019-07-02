@@ -12,7 +12,9 @@ namespace EstacionamentoFinal.Models
     {
         [Key]
         public int IdCategoria { get; set; }
+        [Required(ErrorMessage = "Campo obrigatório!")]
         public string Tamanho { get; set; }
+        [Required(ErrorMessage = "Campo obrigatório")]
         public double Valor { get; set; }
     }
 }

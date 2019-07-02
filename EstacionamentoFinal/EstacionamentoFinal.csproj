@@ -169,9 +169,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201907011532307_CriarBanco2.cs" />
-    <Compile Include="Migrations\201907011532307_CriarBanco2.Designer.cs">
-      <DependentUpon>201907011532307_CriarBanco2.cs</DependentUpon>
+    <Compile Include="Migrations\201907021010253_CriarBanco.cs" />
+    <Compile Include="Migrations\201907021010253_CriarBanco.Designer.cs">
+      <DependentUpon>201907021010253_CriarBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907021030327_Requireds.cs" />
+    <Compile Include="Migrations\201907021030327_Requireds.Designer.cs">
+      <DependentUpon>201907021030327_Requireds.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoriaVeiculo.cs" />
@@ -235,8 +239,11 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907011532307_CriarBanco2.resx">
-      <DependentUpon>201907011532307_CriarBanco2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201907021010253_CriarBanco.resx">
+      <DependentUpon>201907021010253_CriarBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021030327_Requireds.resx">
+      <DependentUpon>201907021030327_Requireds.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

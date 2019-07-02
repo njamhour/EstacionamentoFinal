@@ -54,11 +54,21 @@ namespace EstacionamentoFinal.DAL
             return ctx.Vagas.Include("Setor").Where(x => x.Ocupado == false).ToList();
         }
 
-        public static Vaga ContarVagas()
+        public static Vaga ContarVagas(Vaga v, int id)
         {
-            var UltimoRegistro = ctx.Vagas.Max(x => x.IdVaga);
-            return ctx.Vagas.FirstOrDefault(x => x.IdVaga == UltimoRegistro);
+            //return ctx.Vagas.Include("Setor").FirstOrDefault(x => x.IdVaga == ctx.Vagas.Include("Setor").Max(x => x.Identificador());
 
+            var UltimoId = ctx.Vagas.Include("Setor").Max(x => x.IdVaga);
+            var Teste = Convert.ToInt32(UltimoId);
+            return ctx.Vagas.Include("Setor").FirstOrDefault(x => x.IdVaga == Teste && x.Setor.IdSetor.Equals(id));
+        }
+
+        public static List<Vaga> ContarVagasPorSetor(int? id)
+        {
+            //var UltimoId = ctx.Vagas.Include("Setor").Max(x => x.Identificador);
+            //int LastId = Convert.ToInt32(UltimoId);
+            //return ctx.Vagas.Include("Setor").Where(x => x.Setor.IdSetor == id).FirstOrDefault(x => x.Identificador == LastId);
+            return ctx.Vagas.Include("Setor").Where(x => x.Setor.IdSetor == id).ToList();
         }
 
     }

@@ -12,6 +12,7 @@ namespace EstacionamentoFinal.Models
     {
         [Key]
         public int IdSetor { get; set; }
+        [Required(ErrorMessage = "Campo Obrigatório")]
         public string Nome { get; set; }
     }
 }

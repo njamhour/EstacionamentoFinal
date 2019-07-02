@@ -20,7 +20,7 @@
     </tr>
     @foreach (EstacionamentoFinal.Models.Movimentacao movimentacao in movimentacoes)
     {
-        if (!movimentacao.Finalizada) { 
+        if (!movimentacao.Finalizada && movimentacao.Veiculo.Placa != null) { 
         <tr>
             <td>@movimentacao.Veiculo.Placa</td>
             <td>@movimentacao.Vaga.Identificador</td>

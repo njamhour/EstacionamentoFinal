@@ -19,7 +19,7 @@
         @*<th>Histórico</th>*@
         <th>Identificador</th>
     </tr>
-    @foreach (EstacionamentoFinal.Models.Vaga vaga in vagas)
+    @foreach (EstacionamentoFinal.Models.Vaga vaga in vagas.OrderBy(x => x.Setor.IdSetor))
     {
         <tr>
             <td>@vaga.IdVaga</td>
