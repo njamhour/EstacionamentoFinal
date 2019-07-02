@@ -1,48 +1,3 @@
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\ApplicationInsights.config
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\csc.exe
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CodeAnalysis.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CSharp.Core.targets
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.VisualBasic.Core.targets
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\System.Collections.Immutable.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\System.Reflection.Metadata.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\vbc.exe
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\VBCSCompiler.exe
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\VBCSCompiler.exe.config
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EstacionamentoFinal.dll.config
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EstacionamentoFinal.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EstacionamentoFinal.pdb
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.Agent.Intercept.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.DependencyCollector.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.PerfCounterCollector.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.ServerTelemetryChannel.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.Web.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.WindowsServer.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.ApplicationInsights.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.Web.Infrastructure.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Helpers.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Mvc.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Razor.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Deployment.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Razor.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.DependencyCollector.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.ServerTelemetryChannel.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.Web.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.WindowsServer.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.ApplicationInsights.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Razor.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Deployment.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Razor.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Helpers.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Mvc.xml
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.dll
-c:\users\nicholas jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.pdb
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal1.0\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal1.0\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.dll
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal1.0\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.pdb
@@ -95,10 +50,6 @@ C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal1.0\Estac
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal1.0\EstacionamentoFinal\bin\System.Web.Mvc.xml
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal1.0\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.CriarBanco.resources
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal1.0\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.dll
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.SqlServer.dll
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.xml
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.SqlServer.xml
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\ApplicationInsights.config
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\csc.exe
 C:\Users\User\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -210,6 +161,63 @@ D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.pdb
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.AlterarVaga.resources
 D:\GoogleDrive\BSI2019\VS2015\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.CriaBanco.resources
-C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
 C:\Users\Nicholas Jamhour\Documents\Visual Studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csprojResolveAssemblyReference.cache
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\ApplicationInsights.config
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\csc.exe
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\vbc.exe
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EstacionamentoFinal.dll.config
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EstacionamentoFinal.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EstacionamentoFinal.pdb
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.SqlServer.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.Web.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Helpers.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Mvc.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Razor.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Razor.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\EntityFramework.SqlServer.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.Web.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Razor.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Webpages.Razor.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Helpers.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Mvc.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.pdb
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.CriarBanco2.resources
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Newtonsoft.Json.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Net.Http.Formatting.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Http.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Http.WebHost.dll
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\Newtonsoft.Json.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Net.Http.Formatting.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Http.xml
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Http.WebHost.xml

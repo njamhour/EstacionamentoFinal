@@ -25,14 +25,17 @@ namespace EstacionamentoFinal.Controllers
         public ActionResult Cadastrar(int Setor, int txtQuantidade)
         {
             Setor s = SetorDAO.BuscarSetorPorId(Setor);
+            //Vaga v = new Vaga();
             List<Vaga> vagas = new List<Vaga>();
+            //int abc = Convert.ToInt32(VagasDAO.ContarVagas());
+
             for (int i = 1; i <= txtQuantidade; i++)
             {
                 Vaga vaga = new Vaga
                 {
                     Setor = s,
                     Ocupado = false,
-                    Identificador = String.Concat(i,s.Nome)
+                    Identificador = String.Concat(s.Nome.Substring(0, 1), i)
                 };
                 vagas.Add(vaga);
             }

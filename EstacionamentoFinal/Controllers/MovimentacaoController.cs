@@ -19,6 +19,7 @@ namespace EstacionamentoFinal.Controllers
         }
         public ActionResult Cadastrar()
         {
+
             ViewBag.Veiculo = new SelectList(VeiculoDAO.RetornarVeiculosLivres(), "IdVeiculo", "Placa");
             ViewBag.Vaga = new SelectList(VagasDAO.RetornarVagasLivres(), "IdVaga", "Identificador");
             return View();
@@ -29,13 +30,15 @@ namespace EstacionamentoFinal.Controllers
             Veiculo ve = VeiculoDAO.BuscarVeiculoPorId(Veiculo);
             Vaga va = VagasDAO.BuscarVagaPorId(Vaga);
 
+            DateTime Agora = DateTime.Now;
+            Agora = Agora.AddSeconds(-Agora.Second);
 
             Movimentacao mov = new Movimentacao
             {
                 Veiculo = ve,
                 Vaga = va,
-                Entrada = DateTime.Now,
-                Saida = DateTime.Now
+                Entrada = Agora,
+                Saida = Agora
 
             };
             if (va.Ocupado)
@@ -63,8 +66,10 @@ namespace EstacionamentoFinal.Controllers
         public ActionResult Alterar(string txtVeiculo, string txtVaga, string txtEntrada, string txtSaida, int hdnId)
         {
 
-            DateTime dataEntrada = DateTime.ParseExact(txtEntrada, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
-            DateTime dataSaida = DateTime.ParseExact(txtSaida, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+            DateTime dataEntrada = DateTime.ParseExact(txtEntrada, "dd/MM HH:mm", System.Globalization.CultureInfo.InvariantCulture);
+            DateTime dataSaida = DateTime.ParseExact(txtSaida, "dd/MM HH:mm", System.Globalization.CultureInfo.InvariantCulture);
+
+            dataEntrada = dataEntrada.AddSeconds(-dataEntrada.Second);
 
             Movimentacao mov = MovimentacaoDAO.BuscarMovimentacaoPorId(hdnId);
 
