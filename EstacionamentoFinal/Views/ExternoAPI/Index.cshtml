@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSend").click(function () {
+            $.ajax({
+                url: '@Url.Action("BuscaCep", "ExternoAPI")',
+                type: "GET",
+                contentType: "application/json",
+                data: {
+                    cepSaida: $('#txtCepSaida').val(),
+                    cepEntrada: $('#txtCepChegada').val()
+                },
+                success: function (result) {
+                    $('#divValor').html("<label> <b>Valor:</b>" + result[0] + "R$     <b>Prazo de entrega</b> " + result[1] + " </label>")
+                },
+                error: function (xhr, exception) {
+                    alert("Erro ao realizar calculo...")
+                }
+            });
+        })
+    });
+</script>
+
+<h2>Consultar Preço por CEP</h2>
+<div class="row">
+    <div class="col-md-3">
+        @Html.Label("CEP Saida", null, new { @class = "control-label col-sm2" })
+        @Html.TextBox("txtCepSaida", null, new { @class = "form-control", @placeholder = "CEP Saida"})
+
+    </div>
+    <div class="col-md-3">
+        @Html.Label("CEP Destino", null, new { @class = "control-label col-sm2" })
+        @Html.TextBox("txtCepChegada", null, new { @class = "form-control", @placeholder = "CEP Destino" })
+    </div>
+    <div class="col-md-3">
+        <p><b>Serviço:</b> PAC</p>
+        <p><b>Embalagem:</b> 20x20x20</p>
+        <p><b>Peso:</b> 1 Kg</p>
+    </div>
+    <div class="col-md-3">
+        <a class="btn btn-primary" href="http://www2.correios.com.br/sistemas/precosPrazos/" role="button">
+            Prova Real
+        </a>
+        <p>(Site para os correios)</p>
+    </div>
+    <div class="col-md-12">
+        <button class="btn btn-primary" id="btnSend">Consultar</button>
+    </div>
+    <br />
+</div>
+
+<div class="row">
+    <div class="col-md-12" id="divValor">
+        
+    </div>
+</div>
+<hr />
+<div class="container">
+    <table class="table table-striped table-bordered" style="width:50%">
+        <tr>
+            <th class="text-center">CEP</th>
+            <th class="text-center">Local</th>
+        </tr>
+        <tr>
+            <td align="center">40470-630</td>
+            <td align="center">Bahia</td>
+        </tr>
+        <tr>
+            <td align="center">02860-001</td>
+            <td align="center">São Paulo</td>
+        </tr>
+        <tr>
+            <td align="center">22041-011</td>
+            <td align="center">Rio de Janeiro</td>
+        </tr>
+        <tr>
+            <td align="center">80240-210</td>
+            <td align="center">Paraná</td>
+        </tr>
+    </table>
+</div>
+
