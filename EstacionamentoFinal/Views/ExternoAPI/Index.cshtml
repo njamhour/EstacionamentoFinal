@@ -15,7 +15,7 @@
                     cepEntrada: $('#txtCepChegada').val()
                 },
                 success: function (result) {
-                    $('#divValor').html("<label> <b>Valor:</b>" + result[0] + "R$     <b>Prazo de entrega</b> " + result[1] + " </label>")
+                    $('#divValor').html("<label> <b>Valor:</b>" + result[0] + "R$     <b>Prazo de entrega:</b> " + result[1] + " dias</label>")
                 },
                 error: function (xhr, exception) {
                     alert("Erro ao realizar calculo...")

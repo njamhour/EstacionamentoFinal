@@ -3,7 +3,7 @@ namespace EstacionamentoFinal.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CriarBanco : DbMigration
+    public partial class CriaBanco : DbMigration
     {
         public override void Up()
         {
@@ -12,7 +12,7 @@ namespace EstacionamentoFinal.Migrations
                 c => new
                     {
                         IdCategoria = c.Int(nullable: false, identity: true),
-                        Tamanho = c.String(),
+                        Tamanho = c.String(nullable: false),
                         Valor = c.Double(nullable: false),
                     })
                 .PrimaryKey(t => t.IdCategoria);
@@ -64,7 +64,7 @@ namespace EstacionamentoFinal.Migrations
                 c => new
                     {
                         IdSetor = c.Int(nullable: false, identity: true),
-                        Nome = c.String(),
+                        Nome = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.IdSetor);
             
@@ -73,15 +73,15 @@ namespace EstacionamentoFinal.Migrations
                 c => new
                     {
                         IdVeiculo = c.Int(nullable: false, identity: true),
-                        Placa = c.String(),
-                        Cor = c.String(),
-                        Modelo = c.String(),
-                        Fabricante = c.String(),
+                        Placa = c.String(nullable: false),
+                        Cor = c.String(nullable: false),
+                        Modelo = c.String(nullable: false),
+                        Fabricante = c.String(nullable: false),
                         Estacionado = c.Boolean(nullable: false),
-                        CategoriaVeiculo_IdCategoria = c.Int(),
+                        CategoriaVeiculo_IdCategoria = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.IdVeiculo)
-                .ForeignKey("dbo.CategoriaVeiculo", t => t.CategoriaVeiculo_IdCategoria)
+                .ForeignKey("dbo.CategoriaVeiculo", t => t.CategoriaVeiculo_IdCategoria, cascadeDelete: true)
                 .Index(t => t.CategoriaVeiculo_IdCategoria);
             
         }

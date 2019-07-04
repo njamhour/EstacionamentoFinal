@@ -193,13 +193,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201907021010253_CriarBanco.cs" />
-    <Compile Include="Migrations\201907021010253_CriarBanco.Designer.cs">
-      <DependentUpon>201907021010253_CriarBanco.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907021030327_Requireds.cs" />
-    <Compile Include="Migrations\201907021030327_Requireds.Designer.cs">
-      <DependentUpon>201907021030327_Requireds.cs</DependentUpon>
+    <Compile Include="Migrations\201907040848243_CriaBanco.cs" />
+    <Compile Include="Migrations\201907040848243_CriaBanco.Designer.cs">
+      <DependentUpon>201907040848243_CriaBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoriaVeiculo.cs" />
@@ -272,18 +268,15 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907021010253_CriarBanco.resx">
-      <DependentUpon>201907021010253_CriarBanco.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907021030327_Requireds.resx">
-      <DependentUpon>201907021030327_Requireds.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReferenceCEP\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201907040848243_CriaBanco.resx">
+      <DependentUpon>201907040848243_CriaBanco.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

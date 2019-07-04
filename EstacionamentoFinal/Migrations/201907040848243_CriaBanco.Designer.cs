@@ -7,13 +7,13 @@ namespace EstacionamentoFinal.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class CriarBanco : IMigrationMetadata
+    public sealed partial class CriaBanco : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CriarBanco));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CriaBanco));
         
         string IMigrationMetadata.Id
         {
-            get { return "201907021010253_CriarBanco"; }
+            get { return "201907040848243_CriaBanco"; }
         }
         
         string IMigrationMetadata.Source

@@ -1,15 +1,25 @@
 ﻿@model EstacionamentoFinal.Models.Vaga
-
+@using EstacionamentoFinal.Models
 
 @{
     ViewBag.Title = "Cadastrar";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Setor> s = ViewBag.ValidaSetor;
+    
 }
 
 @using (Html.BeginForm("Cadastrar", "Vaga", FormMethod.Post, new { @class = "form-horizontal" }))
 { 
     <fieldset>
         <legend>Cadastrar Vaga</legend>
+        @if(s.Count() == 0)
+        {
+            <p>Não existem setores cadastrados!</p>
+            <a href="~/Setor/Index">Cadastrar Setor</a>
+        }
+        else
+        { 
+
         @Html.ValidationSummary("", new { @class = "text-danger" })
         <div id="Setor" class="form-group">
             @Html.Label("Setor", new { @class = "control-label col-sm-2" })
@@ -32,5 +42,6 @@
                 <input class="btn btn-primary" type="submit" value="Cadastrar" />
             </div>
         </div>
+        }
     </fieldset>
 }

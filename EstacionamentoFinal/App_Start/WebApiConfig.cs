@@ -10,6 +10,8 @@ namespace EstacionamentoFinal
         public static void Register(HttpConfiguration config)
         {
             config.MapHttpAttributeRoutes();
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
+            config.Formatters.JsonFormatter.Indent = true;
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

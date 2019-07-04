@@ -20,6 +20,7 @@ namespace EstacionamentoFinal.Controllers
         public ActionResult Cadastrar()
         {
             ViewBag.Setor = new SelectList(SetorDAO.RetornarSetor(), "IdSetor", "Nome");
+            ViewBag.ValidaSetor = SetorDAO.RetornarSetor();
             return View();
         }
         [HttpPost]

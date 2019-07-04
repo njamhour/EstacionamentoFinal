@@ -11,10 +11,12 @@ namespace EstacionamentoFinal.Util
         public static bool PlacaValida(string Placa)
         {
             Regex rx = new Regex(@"^[a-zA-Z]{3}\-\d{4}$");
-            
-            if(rx.IsMatch(Placa))
+            if (Placa != null)
             {
-                return true;
+                if (rx.IsMatch(Placa))
+                {
+                    return true;
+                }
             }
             return false;
         }

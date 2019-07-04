@@ -12,12 +12,15 @@ namespace EstacionamentoFinal.Models
     {
         [Key]
         public int IdVeiculo { get; set; }
-        [Required(ErrorMessage = "Necessário preencher ou verifique a sintaxe")]
+        [Required(ErrorMessage = "PLACA: Necessário preencher ou verifique a sintaxe")]
         public string Placa { get; set; }
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Cor { get; set; }
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Modelo { get; set; }
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Fabricante { get; set; }
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public CategoriaVeiculo CategoriaVeiculo { get; set; }
         public bool Estacionado { get; set; }
 

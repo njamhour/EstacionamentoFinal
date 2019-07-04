@@ -20,6 +20,7 @@ namespace EstacionamentoFinal.Controllers
         public ActionResult Cadastrar()
         {
             ViewBag.CategoriaVeiculo = new SelectList(CategoriaVeiculoDAO.RetornarCategoria(), "IdCategoria", "Tamanho");
+            ViewBag.ValidarCategoriaVeiculo = CategoriaVeiculoDAO.RetornarCategoria();
             return View();
         }
 
