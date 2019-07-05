@@ -1,0 +1,79 @@
+﻿@model EstacionamentoFinal.Models.Veiculo
+@using EstacionamentoFinal.Models
+
+@{
+    List<CategoriaVeiculo> CategoriaVeiculo = ViewBag.ValidarCategoriaVeiculo;
+}
+
+@using (Html.BeginForm("Cadastrar", "Veiculo", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+{
+
+    <fieldset>
+        @if (CategoriaVeiculo.Count() == 0)
+        {
+            <p>Não existem categorias cadastradas</p>
+            <a href="~/Veiculo/CadastrarCategoria">Cadastrar Categoria</a>
+        }
+        else
+        {
+
+
+
+            <legend>Cadastrar Veiculo</legend>
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+            <div id="Placa" class="form-group">
+                @Html.LabelFor(model => model.Placa, new { @class = "control-label col-sm2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.Placa, new { @class = "form-control", @placeholder = "Placa do veículo (AAA-1234)" })
+                    @Html.ValidationMessageFor(model => model.Placa, null, new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div id="Cor" class="form-group">
+                @Html.LabelFor(model => model.Cor, new { @class = "control-label col-sm2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.Cor, new { @class = "form-control", @placeholder = "Cor do veículo" })
+                    @Html.ValidationMessageFor(model => model.Cor, null, new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div id="Modelo" class="form-group">
+                @Html.LabelFor(model => model.Modelo, new { @class = "control-label col-sm2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.Modelo, new { @class = "form-control", @placeholder = "Modelo do veículo" })
+                    @Html.ValidationMessageFor(model => model.Modelo, null, new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div id="Fabricante" class="form-group">
+                @Html.LabelFor(model => model.Fabricante, new { @class = "control-label col-sm2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.Fabricante, new { @class = "form-control", @placeholder = "Fabricante do veículo" })
+                    @Html.ValidationMessageFor(model => model.Fabricante, null, new { @class = "text-danger" })
+                </div>
+            </div>
+            <div id="Quantidade Portas" class="form-group">
+                @Html.LabelFor(model => model.QuantidadePortas, new { @class = "control-label col-sm2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.QuantidadePortas, new { @class = "form-control", @placeholder = "Fabricante do veículo" })
+                    @Html.ValidationMessageFor(model => model.QuantidadePortas, null, new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div id="CategoriaVeiculo" class="form-group">
+                @Html.Label("CategoriaVeiculo", new { @class = "control-label col-sm-2" })
+                <div class="col-sm-10">
+                    @Html.DropDownList("CategoriaVeiculo", null,
+                    " -- SELECIONE -- ",
+                    new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input class="btn btn-primary" type="submit" value="Cadastrar" />
+                </div>
+            </div>
+        }
+    </fieldset>
+}
