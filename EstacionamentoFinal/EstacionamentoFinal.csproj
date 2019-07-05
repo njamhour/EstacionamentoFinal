@@ -193,9 +193,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201907040848243_CriaBanco.cs" />
-    <Compile Include="Migrations\201907040848243_CriaBanco.Designer.cs">
-      <DependentUpon>201907040848243_CriaBanco.cs</DependentUpon>
+    <Compile Include="Migrations\201907042212521_CriarBanco.cs" />
+    <Compile Include="Migrations\201907042212521_CriarBanco.Designer.cs">
+      <DependentUpon>201907042212521_CriarBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907042228536_QuantidadePortas.cs" />
+    <Compile Include="Migrations\201907042228536_QuantidadePortas.Designer.cs">
+      <DependentUpon>201907042228536_QuantidadePortas.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoriaVeiculo.cs" />
@@ -274,8 +278,11 @@
     <WCFMetadataStorage Include="Service References\ServiceReferenceCEP\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907040848243_CriaBanco.resx">
-      <DependentUpon>201907040848243_CriaBanco.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201907042212521_CriarBanco.resx">
+      <DependentUpon>201907042212521_CriarBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907042228536_QuantidadePortas.resx">
+      <DependentUpon>201907042228536_QuantidadePortas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

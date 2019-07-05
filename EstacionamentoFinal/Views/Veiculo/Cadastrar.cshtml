@@ -52,6 +52,13 @@
                     @Html.ValidationMessageFor(model => model.Fabricante, null, new { @class = "text-danger" })
                 </div>
             </div>
+            <div id="Quantidade Portas" class="form-group">
+                @Html.LabelFor(model => model.QuantidadePortas, new { @class = "control-label col-sm2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.QuantidadePortas, new { @class = "form-control", @placeholder = "Fabricante do veículo" })
+                    @Html.ValidationMessageFor(model => model.QuantidadePortas, null, new { @class = "text-danger" })
+                </div>
+            </div>
 
             <div id="CategoriaVeiculo" class="form-group">
                 @Html.Label("CategoriaVeiculo", new { @class = "control-label col-sm-2" })

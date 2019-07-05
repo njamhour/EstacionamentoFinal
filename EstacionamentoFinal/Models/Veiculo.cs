@@ -22,6 +22,7 @@ namespace EstacionamentoFinal.Models
         public string Fabricante { get; set; }
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public CategoriaVeiculo CategoriaVeiculo { get; set; }
+        public string QuantidadePortas { get; set; }
         public bool Estacionado { get; set; }
 
     }

@@ -52,7 +52,7 @@ namespace EstacionamentoFinal.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Alterar(string txtPlaca, string txtCor, string txtModelo, string txtFabricante, int txtId)
+        public ActionResult Alterar(string txtPlaca, string txtCor, string txtModelo, string txtFabricante, int txtId, string txtQuantidadePortas)
         {
             Veiculo v = VeiculoDAO.BuscarVeiculoPorId(txtId);
 
@@ -60,6 +60,7 @@ namespace EstacionamentoFinal.Controllers
             v.Cor = txtCor;
             v.Modelo = txtModelo;
             v.Fabricante = txtFabricante;
+            v.QuantidadePortas = txtQuantidadePortas;
 
             //if(!v.Estacionado)
             //{
