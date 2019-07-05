@@ -1,0 +1,29 @@
+﻿@using EstacionamentoFinal.Models
+
+
+@{
+    ViewBag.Title = "Buscar Movimentação";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Vaga v = ViewBag.Vagas;
+    List<EstacionamentoFinal.Models.Movimentacao> movimentacao = ViewBag.Movimentacao;
+}
+
+<div class="container">
+    <table class="table table-stripped table-bordered">
+        <tr>
+            <th>Placa</th>
+            <th>Vaga</th>
+            <th>Entrada</th>
+            <th>Saida</th>
+        </tr>
+        @foreach (EstacionamentoFinal.Models.Movimentacao movimentacoes in movimentacao)
+            {
+            <tr>
+                <td>@movimentacoes.Veiculo.Placa</td>
+                <td>@movimentacoes.Vaga.Identificador</td>
+                <td>@movimentacoes.Entrada</td>
+                <td>@movimentacoes.Saida</td>
+            </tr>
+        }
+    </table>
+</div>

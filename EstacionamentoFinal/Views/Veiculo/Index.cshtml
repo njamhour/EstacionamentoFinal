@@ -17,7 +17,6 @@
         <th>Modelo</th>
         <th>Fabricante</th>
         <th>Categoria</th>
-        <th>Quantidade Portas</th>
         <th>Ações</th>
     </tr>
     @foreach (EstacionamentoFinal.Models.Veiculo veiculo in veiculos)
@@ -28,7 +27,6 @@
             <td>@veiculo.Modelo</td>
             <td>@veiculo.Fabricante</td>
             <td>@veiculo.CategoriaVeiculo.Tamanho</td>
-            <td>@veiculo.QuantidadePortas</td>
             <td>
                 @Html.ActionLink("Remover", "Remover", "Veiculo",
                new { id = veiculo.IdVeiculo },

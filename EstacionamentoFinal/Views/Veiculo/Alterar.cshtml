@@ -56,15 +56,6 @@
             </div>
         </div>
 
-        <div id="Quantidade de Portas" class="form-group">
-            @Html.Label("QuantidadePortas", new { @class = "control-label col-sm-2" })
-            <div class="col-sm-10">
-                @Html.TextBox("txtQuantidadePortas", v.QuantidadePortas, new { @class = "form-control", @placeholder = "" })
-                @*@Html.TextBoxFor(model => model.Placa, new { @class = "form-control", @placeholder = "Placa do veículo" })*@
-                @*@Html.ValidationMessageFor(model => model.Placa, null, new { @class = "text-danger" })*@
-            </div>
-        </div>
-
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <input class="btn btn-primary" type="submit" value="Alterar" />

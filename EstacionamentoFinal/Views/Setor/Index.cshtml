@@ -1,0 +1,33 @@
+﻿
+@{
+    List<EstacionamentoFinal.Models.Setor> setores = ViewBag.Setores;
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Gerenciamento das Vagas</h1>
+@Html.ActionLink("Cadastrar Setor", "Cadastrar", "Setor", new { @class = "btn btn-primary" })
+<br />
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Numeração</th>
+        <th>Nome</th>
+        <th>Ações</th>
+    </tr>
+    @foreach (EstacionamentoFinal.Models.Setor setor in setores)
+    {
+        <tr>
+            <td>@setor.IdSetor</td>
+            <td>@setor.Nome</td>
+            <td>
+                @Html.ActionLink("Remover", "Remover", "Setor",
+               new { @id = setor.IdSetor },
+               new { @class = "btn btn-danger" })
+
+            @Html.ActionLink("Alterar", "Alterar", "Setor",
+                new { @id = setor.IdSetor },
+                new { @class = "btn btn-warning" })
+        </td>
+    </tr>
+    }
+</table>

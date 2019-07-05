@@ -221,4 +221,4 @@ C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFi
 C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\bin\System.Web.Http.WebHost.xml
 C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.CriarBanco.resources
 C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.csproj.GenerateResource.Cache
-C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.QuantidadePortas.resources
+C:\Users\Nicholas Jamhour\documents\visual studio 2015\Projects\EstacionamentoFinal\EstacionamentoFinal\obj\Debug\EstacionamentoFinal.Migrations.Requireds.resources

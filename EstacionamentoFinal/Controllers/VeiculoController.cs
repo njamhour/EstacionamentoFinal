@@ -20,7 +20,6 @@ namespace EstacionamentoFinal.Controllers
         public ActionResult Cadastrar()
         {
             ViewBag.CategoriaVeiculo = new SelectList(CategoriaVeiculoDAO.RetornarCategoria(), "IdCategoria", "Tamanho");
-            ViewBag.ValidarCategoriaVeiculo = CategoriaVeiculoDAO.RetornarCategoria();
             return View();
         }
 
@@ -52,7 +51,7 @@ namespace EstacionamentoFinal.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Alterar(string txtPlaca, string txtCor, string txtModelo, string txtFabricante, int txtId, string txtQuantidadePortas)
+        public ActionResult Alterar(string txtPlaca, string txtCor, string txtModelo, string txtFabricante, int txtId)
         {
             Veiculo v = VeiculoDAO.BuscarVeiculoPorId(txtId);
 
@@ -60,7 +59,6 @@ namespace EstacionamentoFinal.Controllers
             v.Cor = txtCor;
             v.Modelo = txtModelo;
             v.Fabricante = txtFabricante;
-            v.QuantidadePortas = txtQuantidadePortas;
 
             //if(!v.Estacionado)
             //{
